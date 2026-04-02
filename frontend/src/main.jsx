@@ -8,10 +8,10 @@ import CaptainContext from './context/CaptainContext.jsx';
 import SocketProvider from './context/SocketContext.jsx';
 
 createRoot(document.getElementById('root')).render(
- <CaptainContext>
+  <CaptainContext>
     <UserContext>
       <SocketProvider>
-        <BrowserRouter>
+        <BrowserRouter basename="/Uber_Clone">
           <App />
         </BrowserRouter>
       </SocketProvider>
